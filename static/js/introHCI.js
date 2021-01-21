@@ -12,11 +12,12 @@ function initializePage() {
 	$("#testjs").click(function(e) {
 		$('.jumbotron h1').text("Javascript is connected");
 		$("#testjs").text('Please wait ...');
-		$(".project").click(projectClick);
+		// $(".project").click(projectClick);
 		$(".jumbotron p").toggleClass("active");
 	});
 	// Add any additional listeners here
 	// example: $("#div-id").click(functionToCall);
+	$("a.thumbnail").click(projectClick);
 }
 
 function projectClick(e) {
@@ -31,3 +32,5 @@ function projectClick(e) {
 		$(description).fadeOut();
 	}
 }
+
+
